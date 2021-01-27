@@ -19,6 +19,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -57,6 +58,9 @@ img {
   letter-spacing: 0.03 em;
   font-style: normal;
 }
+.header .logotype {
+  margin-right: 93px;
+}
 
 .logo-web {
   color: var(--accent-color);
@@ -78,24 +82,41 @@ img {
   box-sizing: border-box;
 }
 .header-nav {
+  text-align: center;
   padding: 30px 0 31px;
   display: flex;
 }
 .navigation {
   display: flex;
+  align-items: center;
 }
+/*auth-nav */
 .auth-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
-
+.auth-nav .info + .info {
+  margin-left: 50px;
+}
 .navigation-list {
   display: flex;
 }
-.navigation-list-item {
+.navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.info {
+  display: block;
+}
+.navigation-list-item,
+.info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigation-list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 14px;
@@ -113,6 +134,7 @@ img {
 }
 
 .header .info {
+  display: block;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 14px;
@@ -306,7 +328,8 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* projects */
+/* projects Portfolio */
+
 .projects-title {
   font-family: var(--text-font);
   font-weight: 700;
@@ -323,17 +346,49 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-list-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+.projects-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* footer */
+
 .footer {
   padding: 66px 0 64px;
   background-color: #2f303a;
 }
+
 .logotype.logotype-dark-theme {
   display: inline-block;
   margin-bottom: 20px;
 }
-.address-list-item-link {
-  display: inline-block;
+.address-list-item {
   min-width: 231px;
   margin-bottom: 9px;
+}
+/* Hero Portfolio*/
+
+.buttons .container {
+  display: flex;
+  display: block;
+}
+.nav-menu {
+  text-align: center;
+}
+.buttons-list {
+  display: block;
+  margin-bottom: 50px;
+}
+.buttons-list-item {
+  display: inline-block;
+}
+.buttons-list-item:not(:last-child) {
+  margin-right: 8px;
 }
