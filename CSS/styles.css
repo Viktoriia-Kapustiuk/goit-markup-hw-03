@@ -19,7 +19,7 @@ h5,
 h6,
 p {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 ul,
@@ -177,8 +177,18 @@ img {
 
 /* hero*/
 .hero {
-  padding: 200px 250px;
+  /* display: flex; */
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-side {
+  display: inline-block;
   text-align: center;
 }
 .title {
@@ -188,7 +198,6 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -272,7 +281,7 @@ img {
   justify-content: center;
   text-align: center;
   min-width: 376px;
-  padding-bottom: 59px;
+  margin-bottom: 50px;
 }
 
 /* our team */
@@ -280,11 +289,11 @@ img {
   background-color: #f5f4fa;
 }
 .our-team-guys {
-  padding-top: 101px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-team-title {
-  margin-bottom: 53px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .our-team-list {
@@ -379,7 +388,8 @@ img {
 /* footer */
 
 .footer {
-  padding: 66px 0 64px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
