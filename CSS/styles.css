@@ -114,7 +114,7 @@ img {
 .info {
   display: block;
 }
-.navigation-list-item,
+.navigation-list-link,
 .info {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -272,7 +272,6 @@ img {
 }
 .about-us-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .about-us-list-item:not(:last-child) {
   margin-right: 30px;
@@ -307,8 +306,7 @@ img {
 }
 .our-team-text {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
   background-color: #fff;
 }
 .our-team-title-names {
