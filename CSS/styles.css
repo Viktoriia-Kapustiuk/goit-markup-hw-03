@@ -55,7 +55,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  letter-spacing: 0.03 em;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .header .logotype {
@@ -75,7 +75,7 @@ img {
 
 /* header*/
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .main {
   padding-top: 94px;
@@ -303,11 +303,11 @@ img {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 .our-team-text {
   text-align: center;
   padding: 30px 32px;
-  background-color: #fff;
 }
 .our-team-title-names {
   margin-bottom: 10px;
